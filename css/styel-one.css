@@ -6,8 +6,8 @@
   padding: 0;
 }
 body {
-  font-family: "Work Sans", sans-serif;
-}
+font-family: 'Poppins', sans-serif;
+font-family: 'Work Sans', sans-serif;}
 :root {
   --maincolor: #45f3ff;
   --maintransiton: 2s;
