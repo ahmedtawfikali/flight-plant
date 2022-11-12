@@ -73,16 +73,7 @@ header nav > ul > li a {
   color: var(--maincolor);
 }
 
-/* @media (max-width: 991px) {
-header .container > a {
-    font-size: 25px;
 
-  }
-  header nav ul li {
-    padding: 10px;
-    font-size: 12.5px;
-  }
-} */
 header nav > a {
   position: relative;
 }

@@ -182,7 +182,9 @@ nav li:hover li {
   padding: 15px 0;
   line-height: 1.5;
   color: #0000008a;
-}/* start-main titl */
+}
+
+/* start-main titl */
 @media (max-width: 767px) {
   .main-title {
     padding: 5px 10px;
@@ -270,7 +272,7 @@ img {
 }
 .INSTAGRAm .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
 }
 .INSTAGRAm .container img {
@@ -299,12 +301,106 @@ img {
   transform: rotatex(360deg);
 }
 
+/* <!-- start-we-are  -->*/
+
+
+/* <!-- start-we-are  -->*/
+@media (max-width: 767px) {
+  .weare .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  .who .container .box .imge img {
+    max-width: 70%;
+  }
+  .who .container .box .imge {
+    text-align: center;
+  }
+  .weare .container .box .imge {
+    text-align: center;
+  }
+  .weare .container .box .imge img {
+    max-width: 70%;
+  }
+}
+.weare {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: var(--second-coloe);
+}
+.weare .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.weare .container h3,
+.who h3 {
+  font-weight: 600;
+  text-align: center;
+  font-size: 41px;
+  padding: 20px 0;
+}
+img {
+  max-width: 100%;
+}
+
+.weare .container .box img,
+.who .container .box img {
+  border-radius: 63px;
+}
+.weare .container .box h2 {
+  padding: 50px 0 0;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+.weare .container .box p,
+.who .container p {
+  color: var(--blacsh-colo);
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .weare .container .box p,
+  .who .container p,
+  .weare p {
+    font-size: 10px;
+    margin: 10px;
+    font: 15px;
+  }
+}
+.weare p {
+  font-size: 30px;
+  text-align: center;
+  padding: 50px 0;
+  font-family: initial;
+}
+
+.who .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 40px;
+}
+
+.who .container p {
+  padding-top: 80px;
+}
+
+.who h3 {
+  padding: 80px;
+  font-family: initial;
+  font-weight: 500;
+}
 /* footer */
 @media (max-width: 767px) {
-footer .container .link {
+  footer .container .link {
     font-size: 10px;
     margin: 0;
-    padding: 1px ;
+    padding: 1px;
     flex-wrap: wrap;
     display: flex;
   }
@@ -339,3 +435,5 @@ footer .container p {
   text-align: center;
   line-height: 50px;
 }
+/* 
+ */

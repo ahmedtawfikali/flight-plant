@@ -6,8 +6,8 @@
   padding: 0;
 }
 body {
-font-family: 'Poppins', sans-serif;
-font-family: 'Work Sans', sans-serif;}
+  font-family: "Work Sans", sans-serif;
+}
 :root {
   --maincolor: #45f3ff;
   --maintransiton: 2s;
@@ -43,7 +43,6 @@ ul {
 }
 a {
   text-decoration: none;
-  color: var(--maincolor);
 }
 
 /* start-headr */
@@ -74,13 +73,16 @@ header .container nav {
 header .container nav ul {
   display: flex;
 }
+/* تعديل */
 header .container nav ul li a {
   display: block;
   font-size: 14px;
-  padding: 40px 10px;
+  padding: 1px 10px;
   transition: var(--maintransiton);
   color: black;
   font-weight: bold;
+  border-bottom: 1px solid #00800033;
+  border-radius: 30px;
 }
 header .container nav ul li a:hover {
   color: rgba(0, 0, 255, 0.358);
@@ -131,12 +133,41 @@ video {
   max-height: 100%;
   z-index: -1;
 }
-
+/* //// */
+.linkss {
+  position: absolute;
+  flex-direction: column;
+  margin-top: -٥px;
+  padding: 10px;
+  transition: 3s;
+}
+.linkss li {
+  margin: 1px 1px;
+}
+.linkss li a {
+  padding: 2px !important;
+  display: block;
+}
+.linkss li {
+  display: none;
+}
+nav li:hover li {
+  display: block;
+}
+/* //// */
+/* end */
+@media (max-width: 767px) {
+  .text .container p {
+    font-size: 10px;
+    padding: 5px 5px;
+    margin: 30px;
+  }
+}
 /* start-main titl */
 @media (max-width: 767px) {
   .main-title {
     padding: 5px 10px;
-    font-size: 10px;
+    font-size: 8px;
     margin: 50px auto;
   }
 }
@@ -402,10 +433,10 @@ img {
 }
 /* footer */
 @media (max-width: 767px) {
-footer .container .link {
+  footer .container .link {
     font-size: 10px;
     margin: 0;
-    padding: 1px ;
+    padding: 1px;
     flex-wrap: wrap;
     display: flex;
   }
@@ -440,3 +471,12 @@ footer .container p {
   text-align: center;
   line-height: 50px;
 }
+@media (max-width: 767px) {
+  .who .container ,.weare .container   {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+   }
+    .who .container ,.weare .container .imge ,.INSTAGRAm .container  a{
+text-align: center;
+    }}
