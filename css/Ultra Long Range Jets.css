@@ -59,9 +59,7 @@ header .container {
   position: relative;
   min-height: 97px;
 }
-header .container .logo img {
-  height: 100px;
-}
+
 header .container nav {
   flex: 1;
 }
@@ -124,13 +122,16 @@ header nav ul {
   header nav .menu:hover + ul a {
     padding: 15px !important;
   }
+  video {
+    height: 50vh;
+  }
 }
 /* strat-landing{ */
 video {
   right: 0;
   bottom: 0;
   max-width: 100%;
-  max-height: 100%;
+  height: 100vh;
   z-index: -1;
 }
 /* //// */
@@ -155,6 +156,7 @@ nav li:hover li {
   display: block;
 }
 /* //// */
+
 /* end */
 @media (max-width: 767px) {
   .text .container p {
@@ -183,7 +185,6 @@ nav li:hover li {
   line-height: 1.5;
   color: #0000008a;
 }
-
 /* start-main titl */
 @media (max-width: 767px) {
   .main-title {
@@ -302,9 +303,6 @@ img {
 }
 
 /* <!-- start-we-are  -->*/
-
-
-/* <!-- start-we-are  -->*/
 @media (max-width: 767px) {
   .weare .container {
     display: grid;
@@ -324,6 +322,7 @@ img {
     max-width: 70%;
   }
 }
+
 .weare {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -395,6 +394,7 @@ img {
   font-family: initial;
   font-weight: 500;
 }
+
 /* footer */
 @media (max-width: 767px) {
   footer .container .link {
@@ -435,5 +435,16 @@ footer .container p {
   text-align: center;
   line-height: 50px;
 }
-/* 
- */
+@media (max-width: 767px) {
+  .who .container,
+  .weare .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  .who .container,
+  .weare .container .imge,
+  .INSTAGRAm .container a {
+    text-align: center;
+  }
+}
